@@ -1,8 +1,6 @@
 # dashboard-layout
 
-![Screenshot Img](./public/img/screenshot_01.png)
-![Screenshot Img](./public/img/screenshot_02.png)
-![Screenshot Img](./public/img/screenshot_03.png)
+![Screenshot Img](./public/screenshot.png)
 
 ## Tech Stack
 
