@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+@layer components {
+  .max-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .max-container2 {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* For small devices (landscape phones, less than 600px) */
+  @media only screen and (max-width: 599px) {
+    .max-container {
+      max-width: 90%;
+    }
+
+    .max-container2 {
+      max-width: 90%;
+    }
+  }
+
+  /* For medium devices (tablets, less than 900px) */
+  @media only screen and (min-width: 600px) and (max-width: 899px) {
+    .max-container {
+      max-width: 85%;
+    }
+
+    .max-container2 {
+      max-width: 85%;
+    }
+  }
+
+  /* For large devices (desktops, less than 1200px) */
+  @media only screen and (min-width: 900px) and (max-width: 1199px) {
+    .max-container {
+      max-width: 80%;
+    }
+
+    .max-container2 {
+      max-width: 80%;
+    }
+  }
+
+  /* For extra large devices (large desktops) */
+  @media only screen and (min-width: 1200px) {
+    .max-container {
+      max-width: 800px;
+    }
+
+    .max-container2 {
+      max-width: 1164px;
+    }
+  }
+}
+
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #e1e1e1;
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+input:-webkit-autofill {
+  background-color: inherit !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  box-shadow: 0 0 0px 1000px inherit inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px inherit inset !important;
+}
+
+/* For Firefox */
+input:-moz-autofill {
+  background-color: inherit !important;
+  color: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+}
